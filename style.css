@@ -153,9 +153,14 @@ footer {
     width: 50.68px;
     height: 50.68px;
     font-size: 1.1rem;
-    background-color: #161616;
+    background-color: hsla(0, 0%, 9%, .5);
     color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
+}
+
+.navigation ul li .active {
+    color: white;
+    background-color: hsla(0, 0%, 28%, 0.5);
 }
 
 @media (min-width: 550px) {
