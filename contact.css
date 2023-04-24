@@ -99,7 +99,6 @@ main {
     min-height: 510px;
     padding: .8rem;
     background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);
-    backdrop-filter: blur(2px);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
