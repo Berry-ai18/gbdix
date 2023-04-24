@@ -16,7 +16,8 @@ html {
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
 }
 
 img, picture, video, canvas, svg {
