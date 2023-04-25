@@ -18,8 +18,7 @@ main {
     font-weight: 600;
     width: 70vw;
     max-width: 1092px;
-    height: 90%;
-    min-height: 510px;
+    height: 100%;
     padding: .8rem;
     background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);
     border-radius: 10px;
@@ -163,12 +162,31 @@ main {
     height: 2.5em;
 }
 
+.phone-container > a {
+    color: rgba(255, 255, 255, 0.56);
+}
+
 .phone-container {
     transform: translateX(-20%);
 }
 
 .mail-container {
     transform: translateX(20%);
+}
+
+
+@media(max-height: 750px) {
+
+    .mail-container{
+        height: auto;
+    }
+
+    .contact-section {
+        font-size: .9em;
+    }
+    .contact-section > * {
+        padding: .2em 1em;
+    }
 }
 
 @media (min-width: 769px){
