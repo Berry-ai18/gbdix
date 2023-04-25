@@ -61,7 +61,7 @@ body::after {
     inset: 0;
     position: absolute;
     z-index: -1;   
-    background: url("./assets/lineobjekt.png") center center no-repeat;
+    background: url("../assets/lineobjekt.png") center center no-repeat;
     background-size: cover;
     opacity: .3;
 }
