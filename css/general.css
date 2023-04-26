@@ -225,7 +225,7 @@ footer {
     background-color: hsla(0, 2%, 70%, 0.5);
 }
 
-@media (hover:hover) {
+@media (hover:hover) and (pointer:fine) {
     .navigation ul li::before {
         position: absolute;
         width: auto;
