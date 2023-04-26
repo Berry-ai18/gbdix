@@ -50,8 +50,7 @@ body {
     grid-template-rows: auto 1fr auto;
     font-family: 'Kanit', sans-serif;
     -webkit-font-smoothing: antialiased;
-    height: 100vh;
-    height: -webkit-fill-available;
+    min-height: 100%;
     width: 100%;
     color: rgba(255, 255, 255, 0.4);
     background-color: #0B0A0A;
@@ -182,6 +181,7 @@ footer {
     opacity: 0;
     transform: translateY(100%);
     transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+    position: relative;
 }
 
 .navigation ul li:nth-of-type(1) {
@@ -215,14 +215,56 @@ footer {
     width: 50.68px;
     height: 50.68px;
     font-size: 1.1rem;
-    background-color: hsla(0, 0%, 9%, .5);
+    background-color: hsla(0, 3%, 23%, 0.5);
     color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
 }
 
 .navigation ul li .active {
     color: white;
-    background-color: hsla(0, 0%, 28%, 0.5);
+    background-color: hsla(0, 2%, 70%, 0.5);
+}
+
+@media (hover:hover) {
+    .navigation ul li::before {
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-size: 1rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-230%);
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-of-type(1)::before {
+        content: "služby";
+    }
+
+    .navigation ul li:nth-of-type(2)::before {
+        content: "portfólio";
+    }
+
+    .navigation ul li:nth-of-type(3)::before {
+        content: "domov";
+    }
+
+    .navigation ul li:nth-of-type(4)::before {
+        content: "kontakt";
+    }
+
+    .navigation ul li:nth-of-type(5)::before {
+        content: "poloha";
+    }
+
+    .navigation ul li a:hover {
+        transform: scale(1.1);
+        transition: transform .1s ease-in-out 0s;
+    }
+
+    .navigation ul li:hover::before{
+        opacity: 1;
+    }
 }
 
 @media(max-height: 750px) {
@@ -266,6 +308,13 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+@media (min-width: 750px) { 
+    footer{
+        padding-top: 1.5rem;
+    }
+}
+
 
 /*-----------------footer and navigation end---------------------*/
 

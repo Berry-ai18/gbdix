@@ -231,12 +231,12 @@ main {
 
     .form {
         order: 0;
-        gap: 1.5rem;
+        gap: 1rem;
         width: 50%;
     }
 
     .name-and-lastname {
-        gap: 1.5rem;
+        gap: 1.4rem;
         max-width: 100%;
     }
 
