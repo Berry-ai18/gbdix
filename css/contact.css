@@ -16,6 +16,17 @@ main {
     perspective: 1000px;
     perspective-origin: 50% 50%;
 }
+/*
+.main-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}*/
 
 .main-container {
     font-family: 'Inter', sans-serif;
@@ -30,6 +41,7 @@ main {
     flex-direction: column;
     gap: 1em;
     transform: matrix(1, 0, 0.05, 1, 0, 0);
+    overflow: hidden;
 }
 
 
