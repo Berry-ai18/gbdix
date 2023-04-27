@@ -3,34 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /*----------css reset start--------------*/
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    border: none;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     height: 100vh;
     height: -webkit-fill-available;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
     font-family: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
 }
 
@@ -45,7 +60,7 @@ a {
 /*----------css reset end--------------*/
 
 /*------------- general body start---------------------*/
-body {     
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: 'Kanit', sans-serif;
@@ -60,7 +75,7 @@ body::after {
     content: "";
     inset: 0;
     position: absolute;
-    z-index: -1;   
+    z-index: -1;
     background: url("../assets/lineobjekt.png") center center no-repeat;
     background-size: cover;
     opacity: .3;
@@ -71,7 +86,7 @@ header {
     width: 100%;
 }
 
-header > img {
+header>img {
     width: 115px;
     height: auto;
     margin-inline: auto;
@@ -84,7 +99,7 @@ header > img {
 
     header {
         display: none;
-    } 
+    }
 
     main {
         padding-top: .5rem;
@@ -104,7 +119,7 @@ footer {
     padding: 1rem .9rem;
 }
 
-.footer > * {
+.footer>* {
     display: block;
 }
 
@@ -116,12 +131,12 @@ footer {
     gap: .5rem;
     color: #FFFFFFB2;
     width: 100%;
-    max-width: 697px;  
+    max-width: 697px;
     margin-inline: auto;
     z-index: 1;
 }
 
-.menu > span {
+.menu>span {
     opacity: 0;
     display: grid;
     place-items: center;
@@ -134,7 +149,7 @@ footer {
     transition: opacity .8s ease-in-out;
 }
 
-.menu > span.open {
+.menu>span.open {
     opacity: 1;
 }
 
@@ -146,16 +161,16 @@ footer {
     border: none;
     border-radius: 50%;
     font-size: 1.5rem;
-    padding: .9rem 1rem; 
+    padding: .9rem 1rem;
     max-width: 238px;
     cursor: pointer;
 }
 
-.menu-btn > i {
+.menu-btn>i {
     transition: transform .3s ease-in-out;
 }
 
-.menu-btn.open > i {
+.menu-btn.open>i {
     transform: rotate(135deg);
 }
 
@@ -166,7 +181,7 @@ footer {
     max-width: 420px;
     margin-bottom: 1rem;
     margin-inline: auto;
-    padding-inline: .5rem; 
+    padding-inline: .5rem;
 }
 
 .navigation ul {
@@ -204,7 +219,7 @@ footer {
     transition-delay: .5s;
 }
 
-.navigation.open ul li{
+.navigation.open ul li {
     opacity: 1;
     transform: translateY(0);
 }
@@ -233,7 +248,7 @@ footer {
         font-size: 1rem;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-230%);
+        transform: translate(-50%, -230%);
         opacity: 0;
     }
 
@@ -262,7 +277,7 @@ footer {
         transition: transform .1s ease-in-out 0s;
     }
 
-    .navigation ul li:hover::before{
+    .navigation ul li:hover::before {
         opacity: 1;
     }
 }
@@ -275,31 +290,31 @@ footer {
 
 @media (min-width: 550px) {
     .menu {
-        justify-content: space-evenly; 
-        flex-grow: 1;        
+        justify-content: space-evenly;
+        flex-grow: 1;
         gap: 0;
         height: 52px;
         background-color: rgba(22, 22, 22, 0);
-        border-radius: 22px; 
-        transition: background-color .5s ease-in-out;  
+        border-radius: 22px;
+        transition: background-color .5s ease-in-out;
     }
 
     .menu.open {
         background-color: rgba(22, 22, 22, 0.76);
     }
 
-    .menu > span {
+    .menu>span {
         height: 100%;
-        font-size: 13px;  
+        font-size: 13px;
         padding-inline: .5rem;
         background: transparent;
     }
 
     .menu-btn {
-        flex: 1;       
+        flex: 1;
         height: 100%;
-        font-size: 2rem;  
-        border-radius: 96px;        
+        font-size: 2rem;
+        border-radius: 96px;
     }
 
     .navigation ul li a {
@@ -309,12 +324,11 @@ footer {
     }
 }
 
-@media (min-width: 750px) { 
-    footer{
+@media (min-width: 750px) {
+    footer {
         padding-top: 1.5rem;
     }
 }
 
 
 /*-----------------footer and navigation end---------------------*/
-

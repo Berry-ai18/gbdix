@@ -1,86 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”format-detection” content=”telephone=no”>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="”format-detection”" content="”telephone" ="no”" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/contact.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
     <header>
-        <img src="./assets/GBdixLogo_.png" alt="GBdixLogo_">
+      <img src="./assets/GBdixLogo_.png" alt="GBdixLogo_" />
     </header>
 
     <main>
-        <div class="main-container">
-            <section class="heading-container">
-                <h1 class="heading desktop">Kontaktujte nás</h1>
-                <h1 class="heading mobile">Kontakt</h1>
-            </section>  
-            <section class="main-section">
-                <form action="#" class="form">
-                    <div class="name-and-lastname">
-                        <div class="form-group">
-                            <label for="name">Meno</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastname">Priezvisko</label>
-                            <input type="text" id="lastname">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail / Telefón</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="form-group message">
-                        <label for="message">Správa</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
-                    <button class="submit">Odoslať</button>
-                </form> 
-                <section class="contact-section">
-                    <div class="phone-container">
-                        <div class="icon-container">
-                            <img src="./assets/kontakt/Kontakt_icon_.png" alt="Kontakt_icon_">
-                        </div> 
-                        <span>
-                            0905796106
-                        </span>     
-                    </div>
-                    <div class="mail-container">
-                        <div class="icon-container">
-                            <img src="./assets/kontakt/posta_icon_.png" alt="posta_icon_">
-                        </div>  
-                        <span>
-                            info@gbdix.sk
-                        </span>                             
-                    </div>
-                </section>
-            </section>
-        </div>
+      <div class="main-container">
+        <section class="heading-container">
+          <h1 class="heading desktop">Kontaktujte nás</h1>
+          <h1 class="heading mobile">Kontakt</h1>
+        </section>
+        <section class="main-section">
+          <form action="#" class="form">
+            <div class="name-and-lastname">
+              <div class="form-group">
+                <label for="name">Meno</label>
+                <div class="border_background">
+                  <input type="text" id="name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Priezvisko</label>
+                <div class="border_background">
+                  <input type="text" id="lastname" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail / Telefón</label>
+              <div class="border_background">
+                <input type="email" id="email" />
+              </div>
+            </div>
+            <div class="form-group message">
+                <label for="message">Správa</label>
+                <div class="border_background message">
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </div>
+            <button class="submit">Odoslať</button>
+          </form>
+          <section class="contact-section">
+            <div class="phone-container">
+              <div class="icon-container">
+                <img
+                  src="./assets/kontakt/Kontakt_icon_.png"
+                  alt="Kontakt_icon_"
+                />
+              </div>
+              <span>0905796106</span>
+            </div>
+            <div class="mail-container">
+              <div class="icon-container">
+                <img src="./assets/kontakt/posta_icon_.png" alt="posta_icon_" />
+              </div>
+              <span>info@gbdix.sk</span>
+            </div>
+          </section>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <nav class="navigation">
-            <ul>
-                <li><a href="./service.html" class="service-link"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="./portfolio.html" class="portfolio-link"><i class="fa-solid fa-briefcase"></i></a></li>
-                <li><a href="./index.html" class="home-link"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="./contact.html" class="contact-link active"><i class="fa-solid fa-phone"></i></a></li>
-                <li><a href="./location.html" class="location-link"><i class="fa-solid fa-location-dot"></i></a></li>
-            </ul>
-        </nav>
-        <div class="menu">
-            <span class="copyright">Copyright- GBdix s. r. o.</span>
-            <button class="menu-btn"><i class="fa-solid fa-plus"></i></button>
-            <span class="gdpr">Ochrana osobných údajov</span>
-        </div>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="./service.html" class="service-link">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="portfolio-link">
+              <i class="fa-solid fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html" class="home-link">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="contact-link active">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./location.html" class="location-link">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <span class="copyright">Copyright- GBdix s. r. o.</span>
+        <button class="menu-btn"><i class="fa-solid fa-plus"></i></button>
+        <span class="gdpr">Ochrana osobných údajov</span>
+      </div>
     </footer>
     <script src="./js/general.js"></script>
-</body>
+  </body>
 </html>
