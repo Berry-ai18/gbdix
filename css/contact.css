@@ -24,12 +24,22 @@ main {
     max-width: 1092px;
     height: 100%;
     padding: .8rem;
-    background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);
+    /*background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);*/
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 1em;
     transform: matrix(1, 0, 0.05, 1, 0, 0);
+}
+
+.main-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .heading-container {
@@ -108,7 +118,8 @@ main {
     font-family: 'Inter';
     font-weight: 600;
     font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.56);
+    /*color: rgba(255, 255, 255, 0.56);*/
+    color: rgb(156, 154, 154);
     background: rgba(22, 22, 22, 0.57);
     box-shadow: -3px 6px 9px rgba(0, 0, 0, 0.48);
     border-radius: 7px;
@@ -124,6 +135,7 @@ main {
 }
 
 #message {
+    flex: 1;
     height: 100%;
     resize: none;
 }
@@ -147,6 +159,7 @@ main {
       #ffffff40 0%,
       transparent 70%
     );
+    flex: 1;
     display: inline-block;
     border-radius: 7px;
     
@@ -201,7 +214,6 @@ textarea {
 
 
 @media(max-height: 750px) {
-
     .mail-container{
         height: auto;
     }
@@ -214,10 +226,41 @@ textarea {
     }
 }
 
-@media (min-width: 769px){
+@media(min-width: 500px){
     .main-container {
         padding: 2rem;
         border: 15px;
+    }
+
+    .contact-section > *{
+        font-size: 1.5rem;
+    }
+
+    .form{
+        gap: .5rem;
+    }
+
+    .form-group label {
+        font-size: .9375rem;
+    }
+ 
+    .form-group input {
+        font-size: 1.2rem;
+    }
+
+    .submit {
+        height: 46px;
+        width: 159px;
+        font-size: 0.825rem;
+        border-radius: 17px;
+    }
+}
+
+@media (min-width: 769px){
+    header > img {
+        width: 192px;
+        height: auto;
+        margin-inline: auto;
     }
 
     .heading.desktop {
@@ -237,59 +280,6 @@ textarea {
     .heading.mobile {
         display: none;
     }
-
-    .main-section {
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1rem;
-        gap: 2rem;
-    }
-
-    .main-section > * {
-        flex: 1;
-    }
-
-    .form {
-        order: 0;
-        gap: 1rem;
-        width: 50%;
-    }
-
-    .name-and-lastname {
-        gap: 1.4rem;
-        max-width: 100%;
-    }
-
-    .contact-section {
-        align-items: flex-end;
-    }
-
-    .contact-section > * {
-        transform: translateX(0);
-        padding-left: 1rem;
-        padding-block: 0;
-        margin-top: .8em;
-        max-width: 408px;
-        height: 80px;
-        font-size: 1.1rem;
-        border-radius: 17px;
-    }
-
-    #message {
-        height: 100%;
-    }
-
-    .icon-container {
-        width: 3.3em;
-        height: 3.3em;
-    }
-
-    .submit {
-        height: 46px;
-        width: 159px;
-        font-size: 0.825rem;
-        border-radius: 17px;
-    }
 }
 
 @media (min-width: 1025px){
@@ -297,10 +287,11 @@ textarea {
         background-size: auto;
     }
 
-    header > img {
-        width: 192px;
-        height: auto;
-        margin-inline: auto;
+
+    main {
+        place-self: center;
+        height: 65vh;
+        overflow-y: scroll; 
     }
 
     .main-container {
@@ -317,14 +308,24 @@ textarea {
         font-size: 3.325rem;
     }
 
-
     .main-section {
         flex-direction: row;
+        justify-content: space-between;
         margin-top: 2rem;
         gap: 2rem;
     }
 
-    .form-group > label {
+    .main-section > * {
+        flex: 1;
+    }
+
+    .form {
+        order: 0;
+        gap: 1rem;
+        width: 50%;
+    }
+
+    .form-group label {
         font-size: 0.825rem;
         margin-left: 1rem;
     }
@@ -353,12 +354,37 @@ textarea {
     }
 
     .name-and-lastname {
-        gap: 2rem;
+        gap: 1rem;
+        max-width: 100%;
     }
 
     .name-and-lastname input {
         width: 100%;
     }  
+
+    .contact-section {
+        align-items: flex-end;
+    }
+
+    .contact-section > * {
+        transform: translateX(0);
+        padding-left: 1rem;
+        padding-block: 0;
+        margin-top: .8em;
+        max-width: 408px;
+        height: 80px;
+        font-size: 1.1rem;
+        border-radius: 17px;
+    }
+
+    #message {
+        height: 100%;
+    }
+
+    .icon-container {
+        width: 3.3em;
+        height: 3.3em;
+    }
 
 }
 

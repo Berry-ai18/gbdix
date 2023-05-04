@@ -18,7 +18,7 @@ html {
 
 html,
 body {
-    height: 100vh;
+    height: 100%;
     height: -webkit-fill-available;
 }
 
@@ -67,7 +67,8 @@ body {
     -webkit-font-smoothing: antialiased;
     min-height: 100%;
     width: 100%;
-    color: rgba(255, 255, 255, 0.4);
+    /*color: rgba(255, 255, 255, 0.4);*/
+    color: rgb(156, 154, 154);
     background-color: #0B0A0A;
 }
 
@@ -241,7 +242,7 @@ footer {
 }
 
 @media (hover:hover) and (pointer:fine) {
-    .navigation ul li::before {
+   /* .navigation ul li::before {
         position: absolute;
         width: auto;
         height: auto;
@@ -270,15 +271,16 @@ footer {
 
     .navigation ul li:nth-of-type(5)::before {
         content: "poloha";
-    }
+    }*/
 
     .navigation ul li a:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
+        background-color: hsla(0, 2%, 70%, 0.3);
         transition: transform .1s ease-in-out 0s;
     }
 
-    .navigation ul li:hover::before {
-        opacity: 1;
+    .navigation ul li .active:hover {
+        background-color: hsla(0, 2%, 70%, 0.5);
     }
 }
 
