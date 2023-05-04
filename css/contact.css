@@ -287,11 +287,16 @@ textarea {
         background-size: auto;
     }
 
-
     main {
         place-self: center;
         height: 65vh;
-        overflow-y: scroll; 
+        overflow-y: auto; 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    main::-webkit-scrollbar{
+        display: none;
     }
 
     .main-container {
