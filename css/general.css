@@ -87,7 +87,7 @@ header {
     width: 100%;
 }
 
-header>img {
+header > img {
     width: 115px;
     height: auto;
     margin-inline: auto;
@@ -120,7 +120,7 @@ footer {
     padding: 1rem .9rem;
 }
 
-.footer>* {
+.footer > * {
     display: block;
 }
 
@@ -161,17 +161,18 @@ footer {
     background-color: #D7B161;
     border: none;
     border-radius: 50%;
-    font-size: 1.5rem;
     padding: .9rem 1rem;
     max-width: 238px;
     cursor: pointer;
 }
 
-.menu-btn>i {
+.menu-btn > img {
+    width: 1.8rem;
+    filter: brightness(0) invert(1);
     transition: transform .3s ease-in-out;
 }
 
-.menu-btn.open>i {
+.menu-btn.open > img {
     transform: rotate(135deg);
 }
 
@@ -230,15 +231,19 @@ footer {
     place-items: center;
     width: 50.68px;
     height: 50.68px;
-    font-size: 1.1rem;
     background-color: hsla(0, 3%, 23%, 0.5);
     color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
 }
 
+.navigation ul li a img{
+    width: 1.5rem;
+    filter: brightness(.8);
+}
+
 .navigation ul li .active {
-    color: white;
-    background-color: hsla(0, 2%, 70%, 0.5);
+    filter: brightness(0) invert(1);
+    background-color: hsla(0, 2%, 70%, 0.45);
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -305,7 +310,7 @@ footer {
         background-color: rgba(22, 22, 22, 0.76);
     }
 
-    .menu>span {
+    .menu > span {
         height: 100%;
         font-size: 13px;
         padding-inline: .5rem;
@@ -319,16 +324,28 @@ footer {
         border-radius: 96px;
     }
 
+    .menu-btn > img {
+        width: 2.2rem;
+    }
+
     .navigation ul li a {
         width: 65.17px;
         height: 65.17px;
         font-size: 1.5rem;
+    }
+
+    .navigation ul li a img{
+        width: 1.7rem;
     }
 }
 
 @media (min-width: 750px) {
     footer {
         padding-top: 1.5rem;
+    }
+
+    .navigation ul li a img{
+        width: 2rem;
     }
 }
 
