@@ -29,17 +29,20 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    transform: matrix(1, 0, 0.05, 1, 0, 0);
+    position: relative;
+    transform: matrix(1, 0, 0.05, 1, 0, 0); 
 }
 
 .main-container::before{
     content: "";
     position: absolute;
     inset: 0;
+    height: auto;
     z-index: -1;
     background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
 }
 
 .heading-container {
@@ -47,7 +50,6 @@ main {
     box-shadow: -3px 6px 9px rgba(0, 0, 0, 0.48);
     border-radius: 7px;
     padding: 1rem;
-    height: 12%;
     display: grid;
     place-content: center;
 }
@@ -229,7 +231,11 @@ textarea {
 @media(min-width: 500px){
     .main-container {
         padding: 2rem;
-        border: 15px;
+        border-radius: 15px;
+    }
+
+    .main-container::before{
+        border-radius: 15px;
     }
 
     .contact-section > *{
@@ -282,31 +288,72 @@ textarea {
     }
 }
 
+@media (min-width: 1025px) and (max-height:1000px){
+    .wrapper {  
+        display: grid;
+        place-items: center;
+        height: 65vh;
+        overflow-y: auto; 
+        border-radius: 15px;
+        transform: matrix(1, 0, 0.05, 1, 0, 0); 
+    }
+
+    .wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main-container {  
+        height: auto;     
+        transform: none;
+    }
+
+}
+
+@media (min-width: 1025px) and (min-height:1001px){
+    .main-container {     
+        height: 65vh;
+    }
+}
+
+@media (min-width: 1201px) and (max-height:920px){
+    .wrapper {  
+        display: grid;
+        place-items: center;
+        height: 65vh;
+        overflow-y: auto; 
+        transform: matrix(1, 0, 0.05, 1, 0, 0); 
+        border-radius: 15px;
+    }
+
+    .wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main-container {  
+        height: auto;     
+        transform: none;
+    }
+}
+
+@media (min-width: 1201px) and (min-height:921px){
+    .main-container {     
+        height: 65vh;
+    }
+
+}
+
+
 @media (min-width: 1025px){
     body::after {     
         background-size: auto;
     }
 
-    main {
-        place-self: center;
-        height: 65vh;
-        overflow-y: auto; 
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    main::-webkit-scrollbar{
-        display: none;
-    }
-
     .main-container {
-        padding: 3rem 2rem;
-        border: 15px;
+        padding: 3rem 2rem;       
     }
 
     .heading-container {
         border-radius: 25px;
-        height: 100px;
     }
 
     .heading.desktop {
@@ -390,7 +437,6 @@ textarea {
         width: 3.3em;
         height: 3.3em;
     }
-
 }
 
 @media (min-width: 1201px){ 
