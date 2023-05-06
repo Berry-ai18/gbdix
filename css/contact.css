@@ -162,9 +162,11 @@ main {
       transparent 70%
     );
     flex: 1;
-    display: inline-block;
-    border-radius: 7px;
-    
+    border-radius: 7px;  
+}
+
+.border_background.message {
+    display: flex;
 }
 
 textarea {
