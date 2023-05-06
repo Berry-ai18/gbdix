@@ -61,6 +61,7 @@ main {
     font-weight: 800;
     background: #B0914F;
     background: linear-gradient(160deg,  #D7B161 0%, rgba(255, 255, 255, 0.3) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -279,6 +280,7 @@ textarea {
         font-weight: 700;
         background: #B0914F;
         background: linear-gradient(160deg,  rgba(255, 255, 255, .3) 0%, #D7B161 50%, rgba(255, 255, 255, 0.3) 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 

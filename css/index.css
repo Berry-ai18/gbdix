@@ -158,6 +158,7 @@ main {
     font-size: .7rem;
     background: #000000;
     background: linear-gradient(140deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 20%, #FFFFFF 45%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -214,6 +215,7 @@ main {
     font-weight: 700;
     background: #B0914F;
     background: linear-gradient(160deg,  #D7B161 0%, rgba(255, 255, 255, 0.3) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -241,6 +243,7 @@ main {
     font-weight: 700;
     background: #B0914F;
     background: linear-gradient(160deg,  rgba(255, 255, 255, 0.3) 5%, #D7B161 50%, rgba(255, 255, 255, 0.3) 90%);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
