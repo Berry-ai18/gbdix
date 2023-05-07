@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 
-
-
-
 /*------------------main container start -------------------------*/
 main {
     display: grid;
@@ -22,8 +19,7 @@ main {
     width: 70vw;
     max-width: 1092px;
     height: 100%;
-    padding: .8rem .5rem;
-    /*background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);*/
+    padding: .5rem .5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -38,9 +34,9 @@ main {
     inset: 0;
     height: auto;
     z-index: -1;
-    background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: linear-gradient(125.63deg, #FFFFFF -33.7%, rgba(255, 255, 255, 0) -33.68%, rgba(255, 255, 255, 0.31) 50.76%, rgba(102, 102, 102, 0) 125.29%);
+    /*backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);*/
     border-radius: 10px;
 }
 
@@ -134,7 +130,7 @@ main {
     display: grid;
     grid-template-columns: 60% 1fr;
     gap: .5rem;
-    row-gap: 1rem;
+    row-gap: .6rem;
     flex: 1;
 }
 
@@ -207,7 +203,7 @@ main {
     background: rgba(22, 22, 22, 0.88);
     box-shadow: -3px 6px 9px rgba(0, 0, 0, 0.48);
     border-radius: 7px;
-    padding: .7rem;
+    padding: .5rem .7rem;
 }
 
 .middle-info p {
@@ -258,7 +254,7 @@ main {
 .right-card .quality{
     width: 2.4rem;
     height: 2.2rem;
-    background: url("../assets/hlavna/Hodnotenie\ icon.png") no-repeat center;
+    background: url("../assets/hlavna/Hodnotenie_icon_2_20.png") no-repeat center;
     background-size: cover;
     background-position-x: -0.3rem;
 }
@@ -267,9 +263,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
-    padding-inline: .7rem;
-    padding-top: .5rem;
+    padding: .5rem .7rem .4rem;
 }
 
 .bottom-container img {
@@ -466,6 +460,10 @@ main {
         margin-inline: auto;
     }
 
+    .main-container {
+        padding-block: 1.63rem;
+    }
+
     .bottom-bar-left-block img,
     .zvoncek-icon,
     .aa-icon,
@@ -504,7 +502,7 @@ main {
     }
 
     .right-navbar {
-        gap: .7rem;
+        gap: 1rem;
     }
 
     .right-navbar img{
@@ -512,8 +510,9 @@ main {
     }
 
     .search-navbar {
-        flex: 0.6;
+        flex: 0.65;
         padding-block: 0.2rem;
+        margin-right: 5rem;
     }
 
     .middle-search-navbar{
