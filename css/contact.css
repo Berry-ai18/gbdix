@@ -227,12 +227,6 @@ textarea {
 }
 
 @media (min-width: 769px){
-    header > img {
-        width: 192px;
-        height: auto;
-        margin-inline: auto;
-    }
-
     .heading.desktop {
         text-transform: uppercase;
         text-align: center;
