@@ -127,7 +127,7 @@ main {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
     position: relative;
     transform: matrix(1, 0, 0.05, 1, 0, 0);
 }

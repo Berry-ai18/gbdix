@@ -423,7 +423,9 @@
     }
 
     .main-container {
-        padding-block: 1.63rem;
+        padding-bottom: 1.7rem;
+        padding-top: .8rem;
+        gap: .5rem;
     }
 
     .bottom-bar-left-block img,
