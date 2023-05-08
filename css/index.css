@@ -110,13 +110,35 @@
 }
 
 .service {
-    background: rgba(22, 22, 22, 0.88);
+    background-color: rgba(22, 22, 22, 0.88);
     box-shadow: -3px 6px 9px rgba(0, 0, 0, 0.48);
     border-radius: 7px;
     padding: .5rem;
     display: flex;
     align-items: center;
 }
+
+.left-content :nth-of-type(2){
+    background: url("./../assets/hlavna/web_2_62x62.png") bottom right 1rem no-repeat;
+    background-color: rgba(22, 22, 22, 0.88); 
+}
+
+.service:nth-of-type(3){
+    background: url("./../assets/hlavna/cody_icon_62x62.png") bottom right 1rem no-repeat;
+    background-color: rgba(22, 22, 22, 0.88); 
+}
+
+.service:nth-of-type(4){
+    background: url("./../assets/hlavna/PPc_kampan__62x62.png") bottom right 1rem no-repeat;
+    background-color: rgba(22, 22, 22, 0.88);
+}
+
+.service:nth-of-type(5){
+    background: url("./../assets/hlavna/dizajn_icon_62x62.png") bottom right 1rem no-repeat;
+    background-color: rgba(22, 22, 22, 0.88); 
+}
+
+
 
 .service p{
     font-weight: 700;
@@ -305,6 +327,26 @@
     .service p,
     .right-card p{
         font-size: 1.1rem;
+    }
+
+    .left-content :nth-of-type(2){
+        background: url("./../assets/hlavna/web_1_100x100.png") bottom right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88);
+    }
+
+    .service:nth-of-type(3){
+        background: url("./../assets/hlavna/cody_icon_1_100x100.png") bottom right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88); 
+    }
+    
+    .service:nth-of-type(4){
+        background: url("./../assets/hlavna/PPc_kampan__1_100x100.png") bottom right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88);
+    }
+
+    .service:nth-of-type(5){
+        background: url("./../assets/hlavna/dizajn_icon_1_100x100.png") bottom right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88);
     }
 
     .right-card > span {
@@ -552,6 +594,16 @@
     .service {
         padding: 1rem;
         border-radius: 25px;
+    }
+
+    .left-content :nth-of-type(2){
+        background: url("./../assets/hlavna/web_1_100x100.png") bottom -1rem right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88);
+    }
+
+    .service:nth-of-type(5){
+        background: url("./../assets/hlavna/dizajn_icon_1_100x100.png") bottom -1rem right 1rem no-repeat;
+        background-color: rgba(22, 22, 22, 0.88);
     }
 
     .service p{
