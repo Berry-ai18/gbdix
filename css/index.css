@@ -75,6 +75,21 @@
     color: #FFFFFF;
 }
 
+.all {
+    color: #D7B161;
+    position: relative;
+}
+
+.all::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: -0.4rem;
+    width: 120%;
+    height: 1px;
+    background-color: #D7B161;
+}
+
 .bottom-bar-right-block {
     gap: .3rem;
 }
@@ -137,8 +152,6 @@
     background: url("./../assets/hlavna/dizajn_icon_62x62.png") bottom right 1rem no-repeat;
     background-color: rgba(22, 22, 22, 0.88); 
 }
-
-
 
 .service p{
     font-weight: 700;
